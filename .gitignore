@@ -1,0 +1,113 @@
+# ======================
+# Python
+# ======================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+
+# ======================
+# Environment / Secrets
+# ======================
+
+.env
+.env.*
+!.env.example
+
+# API keys
+*.key
+*.pem
+
+
+# ======================
+# Jupyter
+# ======================
+
+.ipynb_checkpoints/
+
+
+# ======================
+# IDEs
+# ======================
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+
+
+# ======================
+# Logs
+# ======================
+
+*.log
+logs/
+
+
+# ======================
+# Generated outputs
+# ======================
+
+output/
+checkpoints/
+
+# Generated datasets
+*.jsonl
+*.csv
+*.parquet
+
+# Hugging Face local datasets
+dataset/
+datasets/
+dataset_cache/
+.cache/
+
+
+# ======================
+# Hugging Face cache
+# ======================
+
+.cache/
+huggingface/
+.huggingface/
+
+
+# ======================
+# Temporary files
+# ======================
+
+tmp/
+temp/
+*.tmp
+
+
+# ======================
+# OS files
+# ======================
+
+.DS_Store
+Thumbs.db
+
+
+# ======================
+# Large files
+# ======================
+
+*.zip
+*.tar
+*.gz
+*.bin
+*.pt
+*.pth
+*.ckpt
