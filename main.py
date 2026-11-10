@@ -226,13 +226,13 @@ def main():
 
             request_count += 1
 
-            print(
-                f"\nBatch completed: {len(batch_results)} samples"
-            )
+            # print(
+            #     f"\nBatch completed: {len(batch_results)} samples"
+            # )
 
-            print(
-                f"Total completed: {len(results)}"
-            )
+            # print(
+            #     f"Total completed: {len(results)}"
+            # )
 
             # ------------------------------------------------
             # REQUEST DELAY
@@ -312,10 +312,10 @@ def main():
 
     # if final_results:
 
-        # push_to_hub(
-        #     final_results,
-        #     HF_REPO
-        # )
+    #     push_to_hub(
+    #         final_results,
+    #         HF_REPO
+    #     )
 
     print("\nTranslation pipeline finished.")
 

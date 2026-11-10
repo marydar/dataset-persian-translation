@@ -27,14 +27,13 @@ BASE_URL = "https://hooshyar.payampardaz.com/api/v1"
 # MODEL = "gpt-6-luna"
 MODEL = "unsloth/Qwen3.8-27B-GGUF:UD-Q4_K_XL"
 
-# https://hooshyar.payampardaz.com/?model=unsloth%2FQwen3.8-27B-GGUF%3AUD-Q4_K_XL
 REASONING = False
 
 # ============================================================
 # GENERATION SETTINGS
 # ============================================================
 
-BATCH_SIZE = 10
+BATCH_SIZE = 1
 
 MAX_TOKENS = 8192
 
@@ -44,7 +43,7 @@ TEMPERATURE = 0.2
 # REQUEST SETTINGS
 # ============================================================
 
-LLM_RETRIES = 5
+LLM_RETRIES = 10
 
 RETRY_SLEEP = 10
 
@@ -70,19 +69,6 @@ TEXT_COLUMN = "text"
 # Label column used for stratified sampling
 LABEL_COLUMN = "label"
 
-# ============================================================
-# SAMPLE SELECTION
-# ============================================================
-
-START_IDX = 0
-
-END_IDX = 10
-
-# Fixed seed for reproducible stratified ordering
-SHUFFLE_SEED = 42
-
-# Local cache for the complete stratified dataset
-DATASET_CACHE_DIR = "./dataset_cache"
 
 # ============================================================
 # OUTPUT
@@ -120,3 +106,17 @@ FILTER_USE_FOR_TRAIN = True
 EXCLUDED_GENERATOR_MODELS = [
     "MiMo V2.5 Free",
 ]
+
+# ============================================================
+# SAMPLE SELECTION
+# ============================================================
+
+START_IDX = 20000
+
+END_IDX = 21000
+
+# Fixed seed for reproducible stratified ordering
+SHUFFLE_SEED = 42
+
+# Local cache for the complete stratified dataset
+DATASET_CACHE_DIR = "./dataset_cache"
